@@ -1,0 +1,16 @@
+<div ng-app = "app" ng-controller = "selectTolls">
+ <form id = "selectTolls" name = "selectTolls">
+    <ul>
+        <li>
+            <input type="checkbox" name = "selectAll" id = "SelectAll" (change) = "selectAll()" ng-model = "all">
+            <label id = "SelectAll" for = "SelectAll">Select All tolls</label><br>
+        </li>
+
+    <li *ngFor = "let toll of tolls" >
+        <input type="checkbox" id = {{toll.id}} (click) = "toggle(toll)" [(checked)] = "all">
+        <label id = {{toll.id}} for = {{toll.name}}>{{toll.name}}</label><br>
+    </li>
+        <input type = "submit" value="Submit selected values"  (click)="submitTolls()" routerLink= "/incoming-tolls/selectTestSuite" >
+    </ul>
+    </form>
+</div>

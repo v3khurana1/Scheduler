@@ -1,0 +1,27 @@
+<div >
+    <form id = "selectSuite" >
+        <ul>
+            <li>
+                <input type="checkbox" id = "SelectAll" (click) = "selectAll()">
+                <label id = "SelectAll" for = "SelectAll">Select All Testcases</label><br>
+            </li>
+
+            <li *ngFor = "let tcObjects of displayTC" >
+                    <ul>
+                        <li *ngFor = "let tc of tcObjects.testCase">
+                            <input type="checkbox" id = {{tc.id}} (click) = "toggle(tcObjects, tc.id)">
+                            <label id = {{tc.id}} for = {{tc.name}}>{{tc.name}}</label>
+                               
+                        </li>
+                        <p>{{tcObjects.line}}</p> 
+                    </ul>
+                    
+            </li>
+       
+           <input type = "submit" value="Submit selected tc" (click) = "createXml()" routerLink = '/incoming-tolls/selectTestSuite/xmlCreation' >
+       
+        </ul>
+   </form>
+    
+   </div>
+ 
