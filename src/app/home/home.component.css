@@ -1,0 +1,11 @@
+.example-card{
+    height: 150px;
+    width: 300px;
+   background-color:gray
+}
+
+.textalign{
+    padding-top: 20%;
+    text-align: center;
+    color: black
+}

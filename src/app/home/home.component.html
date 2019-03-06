@@ -1,3 +1,11 @@
-<p>
-  Welcome Home!
-</p>
+<mat-grid-list cols="3" rowHeight="200px">
+  <div *ngFor="let product of ProductList">
+  <mat-grid-tile  (click)="selectTestCase(product)">
+    <mat-card class="example-card">
+      <mat-card-content class="textalign">
+      {{product}}
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile> 
+</div> 
+</mat-grid-list>

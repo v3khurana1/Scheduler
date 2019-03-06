@@ -12,6 +12,10 @@ import { LoadingPageComponent } from './loading-page/loading-page.component'
 import { XmlCreationService } from './xml-creation.service';
 import { } from '../../node_modules/xmlbuilder'
 import { HttpClientModule } from '@angular/common/http';
+import { AddTestCaseComponent } from './add-test-case/add-test-case.component';
+import  {MatCardModule,MatGridListModule,MatTreeModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TestcaseService} from  './testcase.service';
 
 
 @NgModule({
@@ -22,14 +26,19 @@ import { HttpClientModule } from '@angular/common/http';
     SelectTestcasesComponent,
     HomeComponent,
     LoadingPageComponent,
+    AddTestCaseComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatTreeModule
   ],
-  providers: [MappingTCService, XmlCreationService],
+  providers: [MappingTCService, XmlCreationService,TestcaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
