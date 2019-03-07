@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient} from '@angular/common/http';
-import { ApplicationName } from './home/applicationName';
+import { ApplicationName , Testcases} from './home/applicationName';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { ApplicationName } from './home/applicationName';
 export class ProductListService {
 
   constructor(private http: HttpClient) { }
-  testcaseList : any;
+  categoryList : any;
   returnURL ="http://localhost:3000/api/";
 
   getApplicationList(): Observable<ApplicationName[]>{
@@ -17,11 +17,13 @@ export class ProductListService {
   }
 
   getData(ProductName){
-    this.testcaseList = this.http.post(this.returnURL + "getData",ProductName);
+    this.categoryList = this.http.post<Testcases[]>(this.returnURL + "getData",ProductName);
+    
  }
 
  importList(){
-   return this.testcaseList;
+   console.log(this.categoryList)
+   return this.categoryList;
  }
 
 }

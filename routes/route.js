@@ -13,27 +13,12 @@ router.get('/scheduler', (req, res, next) => {
     })
 })
 
-
 router.get('/getTollData',(req,res,next)=>
     db.getTollData(function (data){
         res.send(data);
     })
 
 )
-
-router.post('/scheduler1', (req, res, next) => {
-
-    console.log("Request received")
-
-    res.send({ name: 123 });
-
-})
-
-router.get('/home', (req, res, next) => {
-
-    res.send("foobar");
-
-})
 
 router.get('/getApplicationList', (req, res, next) => {
     MongoClient.connect(dbURL, { useNewUrlParser: true }, function (err, db) {
@@ -51,9 +36,16 @@ router.post('/getData', (req, res, next) => {
     MongoClient.connect(dbURL, { useNewUrlParser: true }, function (err, db) {
         if (err) throw err;
         var dbo = db.db("Scheduler");
-        console.log(req.param('name'))
         const appName = req.param('name');
-         res.send(dbo.collection("testCases").find({ "applicationName" : appName }))
+        //  dbo.collection("testCases").distinct("categoryName", { "applicationName" : appName })
+        //  .then(function(result){
+        //     res.send(result)
+        //  })
+
+        dbo.collection("testCases").find({ "applicationName" : appName }).toArray(function(err, result){
+            if (err) throw err;
+            res.send(result);
+        })
     });
 })
 

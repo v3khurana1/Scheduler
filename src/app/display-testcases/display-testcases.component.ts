@@ -12,10 +12,9 @@ export class DisplayTestcasesComponent implements OnInit {
     private productListService  : ProductListService
   ) { }
 
-  testcaseList : any;
+  dataList : any;
   ngOnInit() {
-
-    this.productListService.importList().subscribe(data => {this.testcaseList = data})
+    this.productListService.importList().subscribe(data => {this.dataList = data})
   }
 
 }

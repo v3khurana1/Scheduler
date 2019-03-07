@@ -290,7 +290,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list cols=\"3\" rowHeight=\"200px\">\n  <div *ngFor=\"let testcase of testcaseList\">\n  <mat-grid-tile  > \n    <mat-card class=\"example-card\">\n      <mat-card-content class=\"textalign\">\n      {{testcase.categoryName}}\n      </mat-card-content>\n    </mat-card>\n  </mat-grid-tile> \n</div> \n</mat-grid-list>"
+module.exports = "<mat-grid-list cols=\"3\" rowHeight=\"200px\">\n  <div *ngFor=\"let category of categoryList\">\n  <mat-grid-tile> \n    <mat-card class=\"example-card\">\n      <mat-card-content class=\"textalign\">\n      {{category}}\n      </mat-card-content>\n    </mat-card>\n  </mat-grid-tile> \n</div> \n</mat-grid-list>"
 
 /***/ }),
 
@@ -316,7 +316,7 @@ var DisplayTestcasesComponent = /** @class */ (function () {
     }
     DisplayTestcasesComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.productListService.importList().subscribe(function (data) { _this.testcaseList = data; });
+        this.productListService.importList().subscribe(function (data) { _this.categoryList = data; });
     };
     DisplayTestcasesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -561,10 +561,10 @@ var ProductListService = /** @class */ (function () {
         return this.http.get(this.returnURL + "getApplicationList");
     };
     ProductListService.prototype.getData = function (ProductName) {
-        this.testcaseList = this.http.post(this.returnURL + "getData", ProductName);
+        this.categoryList = this.http.post(this.returnURL + "getCategoryList", ProductName);
     };
     ProductListService.prototype.importList = function () {
-        return this.testcaseList;
+        return this.categoryList;
     };
     ProductListService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
