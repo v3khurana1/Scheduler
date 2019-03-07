@@ -16,6 +16,8 @@ import { AddTestCaseComponent } from './add-test-case/add-test-case.component';
 import  {MatCardModule,MatGridListModule,MatTreeModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TestcaseService} from  './testcase.service';
+import { ApplicationName } from './home/applicationName';
+import { DisplayTestcasesComponent } from './display-testcases/display-testcases.component';
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import {TestcaseService} from  './testcase.service';
     HomeComponent,
     LoadingPageComponent,
     AddTestCaseComponent,
+    DisplayTestcasesComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import {TestcaseService} from  './testcase.service';
     MatCardModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    MatTreeModule
+    MatTreeModule,
   ],
   providers: [MappingTCService, XmlCreationService,TestcaseService],
   bootstrap: [AppComponent]

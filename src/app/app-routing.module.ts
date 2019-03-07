@@ -5,6 +5,7 @@ import { SelectTestcasesComponent } from './select-testcases/select-testcases.co
 import { HomeComponent } from './home/home.component';
 import { LoadingPageComponent } from './loading-page/loading-page.component';
 import {AddTestCaseComponent} from './add-test-case/add-test-case.component'
+import { DisplayTestcasesComponent } from './display-testcases/display-testcases.component';
 
 
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path : 'home' , component : HomeComponent},
   {path : 'selectTestSuite', component : SelectTestcasesComponent},
   {path : 'incoming-tolls/selectTestSuite/xmlCreation', component : LoadingPageComponent},
-  {path : 'addTestCase', component : AddTestCaseComponent}
+  {path : 'addTestCase', component : AddTestCaseComponent},
+  {path : 'categories', component : DisplayTestcasesComponent}
 ];
 
 @NgModule({

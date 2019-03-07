@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  add-test-case works!\n</p>\n"
+module.exports = "<p>\r\n  add-test-case works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -97,6 +97,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _loading_page_loading_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./loading-page/loading-page.component */ "./src/app/loading-page/loading-page.component.ts");
 /* harmony import */ var _add_test_case_add_test_case_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./add-test-case/add-test-case.component */ "./src/app/add-test-case/add-test-case.component.ts");
+/* harmony import */ var _display_testcases_display_testcases_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./display-testcases/display-testcases.component */ "./src/app/display-testcases/display-testcases.component.ts");
+
 
 
 
@@ -111,7 +113,8 @@ var routes = [
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"] },
     { path: 'selectTestSuite', component: _select_testcases_select_testcases_component__WEBPACK_IMPORTED_MODULE_4__["SelectTestcasesComponent"] },
     { path: 'incoming-tolls/selectTestSuite/xmlCreation', component: _loading_page_loading_page_component__WEBPACK_IMPORTED_MODULE_6__["LoadingPageComponent"] },
-    { path: 'addTestCase', component: _add_test_case_add_test_case_component__WEBPACK_IMPORTED_MODULE_7__["AddTestCaseComponent"] }
+    { path: 'addTestCase', component: _add_test_case_add_test_case_component__WEBPACK_IMPORTED_MODULE_7__["AddTestCaseComponent"] },
+    { path: 'categories', component: _display_testcases_display_testcases_component__WEBPACK_IMPORTED_MODULE_8__["DisplayTestcasesComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -213,6 +216,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _testcase_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./testcase.service */ "./src/app/testcase.service.ts");
+/* harmony import */ var _display_testcases_display_testcases_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./display-testcases/display-testcases.component */ "./src/app/display-testcases/display-testcases.component.ts");
+
 
 
 
@@ -244,6 +249,7 @@ var AppModule = /** @class */ (function () {
                 _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
                 _loading_page_loading_page_component__WEBPACK_IMPORTED_MODULE_11__["LoadingPageComponent"],
                 _add_test_case_add_test_case_component__WEBPACK_IMPORTED_MODULE_14__["AddTestCaseComponent"],
+                _display_testcases_display_testcases_component__WEBPACK_IMPORTED_MODULE_18__["DisplayTestcasesComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -253,13 +259,74 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_16__["BrowserAnimationsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTreeModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_15__["MatTreeModule"],
             ],
             providers: [_mapping_tc_service__WEBPACK_IMPORTED_MODULE_10__["MappingTCService"], _xml_creation_service__WEBPACK_IMPORTED_MODULE_12__["XmlCreationService"], _testcase_service__WEBPACK_IMPORTED_MODULE_17__["TestcaseService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/display-testcases/display-testcases.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/display-testcases/display-testcases.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rpc3BsYXktdGVzdGNhc2VzL2Rpc3BsYXktdGVzdGNhc2VzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/display-testcases/display-testcases.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/display-testcases/display-testcases.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-grid-list cols=\"3\" rowHeight=\"200px\">\n  <div *ngFor=\"let testcase of testcaseList\">\n  <mat-grid-tile  > \n    <mat-card class=\"example-card\">\n      <mat-card-content class=\"textalign\">\n      {{testcase.categoryName}}\n      </mat-card-content>\n    </mat-card>\n  </mat-grid-tile> \n</div> \n</mat-grid-list>"
+
+/***/ }),
+
+/***/ "./src/app/display-testcases/display-testcases.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/display-testcases/display-testcases.component.ts ***!
+  \******************************************************************/
+/*! exports provided: DisplayTestcasesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DisplayTestcasesComponent", function() { return DisplayTestcasesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _product_list_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../product-list.service */ "./src/app/product-list.service.ts");
+
+
+
+var DisplayTestcasesComponent = /** @class */ (function () {
+    function DisplayTestcasesComponent(productListService) {
+        this.productListService = productListService;
+    }
+    DisplayTestcasesComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.productListService.importList().subscribe(function (data) { _this.testcaseList = data; });
+    };
+    DisplayTestcasesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-display-testcases',
+            template: __webpack_require__(/*! ./display-testcases.component.html */ "./src/app/display-testcases/display-testcases.component.html"),
+            styles: [__webpack_require__(/*! ./display-testcases.component.css */ "./src/app/display-testcases/display-testcases.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_product_list_service__WEBPACK_IMPORTED_MODULE_2__["ProductListService"]])
+    ], DisplayTestcasesComponent);
+    return DisplayTestcasesComponent;
 }());
 
 
@@ -284,7 +351,7 @@ module.exports = ".example-card{\r\n    height: 150px;\r\n    width: 300px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  Welcome Home!\r\n</p>\r\n\r\n\r\n<mat-grid-list cols=\"3\" rowHeight=\"200px\">\r\n  <div *ngFor=\"let product of ProductList\">\r\n  <mat-grid-tile  (click)=\"selectTestCase(product)\">\r\n    <mat-card class=\"example-card\">\r\n      <mat-card-content class=\"textalign\">\r\n      {{product}}\r\n      </mat-card-content>\r\n    </mat-card>\r\n  </mat-grid-tile> \r\n</div> \r\n</mat-grid-list>"
+module.exports = "<mat-grid-list cols=\"3\" rowHeight=\"200px\">\r\n  <div *ngFor=\"let product of ProductList\">\r\n  <mat-grid-tile  (click)=\"selectTestCase(product)\" routerLink= \"/categories\"> \r\n    <mat-card class=\"example-card\">\r\n      <mat-card-content class=\"textalign\">\r\n      {{product.name}}\r\n      </mat-card-content>\r\n    </mat-card>\r\n  </mat-grid-tile> \r\n</div> \r\n</mat-grid-list>"
 
 /***/ }),
 
@@ -301,20 +368,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _testcase_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../testcase.service */ "./src/app/testcase.service.ts");
+/* harmony import */ var _product_list_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../product-list.service */ "./src/app/product-list.service.ts");
+
 
 
 
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(testCaseService) {
+    function HomeComponent(testCaseService, productListService) {
         this.testCaseService = testCaseService;
-        this.ProductList = ['IContract', 'ISupplier', 'IManage', 'ISave', 'ISource', 'eProc', 'eInvoice', 'eCatalouge', 'ZSN', 'iRequest', 'iAnalyze', 'iPerform'];
+        this.productListService = productListService;
     }
     HomeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.productListService.getApplicationList().subscribe(function (data) { _this.ProductList = data; });
     };
     HomeComponent.prototype.selectTestCase = function (productName) {
-        var _this = this;
-        console.log(productName);
-        this.testCaseService.getTestCase(productName).subscribe(function (data) { _this.TestCaseList = data; });
+        this.productListService.getData(productName);
     };
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -322,7 +391,8 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_testcase_service__WEBPACK_IMPORTED_MODULE_2__["TestcaseService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_testcase_service__WEBPACK_IMPORTED_MODULE_2__["TestcaseService"],
+            _product_list_service__WEBPACK_IMPORTED_MODULE_3__["ProductListService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -460,6 +530,49 @@ var MappingTCService = /** @class */ (function () {
         arr.splice(0, arr.length);
     };
     return MappingTCService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product-list.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/product-list.service.ts ***!
+  \*****************************************/
+/*! exports provided: ProductListService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductListService", function() { return ProductListService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var ProductListService = /** @class */ (function () {
+    function ProductListService(http) {
+        this.http = http;
+        this.returnURL = "http://localhost:3000/api/";
+    }
+    ProductListService.prototype.getApplicationList = function () {
+        return this.http.get(this.returnURL + "getApplicationList");
+    };
+    ProductListService.prototype.getData = function (ProductName) {
+        this.testcaseList = this.http.post(this.returnURL + "getData", ProductName);
+    };
+    ProductListService.prototype.importList = function () {
+        return this.testcaseList;
+    };
+    ProductListService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], ProductListService);
+    return ProductListService;
 }());
 
 
@@ -979,7 +1092,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\new\Scheduler\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\nidhi.joshi\Documents\GitHub\Scheduler\src\main.ts */"./src/main.ts");
 
 
 /***/ })

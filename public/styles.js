@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\new\Scheduler\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\nidhi.joshi\Documents\GitHub\Scheduler\src\styles.css */"./src/styles.css");
 
 
 /***/ })
