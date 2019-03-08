@@ -22,6 +22,7 @@ export class ProductListService {
  }
 
  importList(){
+   console.log("after Import")
    console.log(this.categoryList)
    return this.categoryList;
  }

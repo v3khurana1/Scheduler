@@ -13,12 +13,11 @@ import { XmlCreationService } from './xml-creation.service';
 import { } from '../../node_modules/xmlbuilder'
 import { HttpClientModule } from '@angular/common/http';
 import { AddTestCaseComponent } from './add-test-case/add-test-case.component';
-import  {MatCardModule,MatGridListModule,MatTreeModule} from '@angular/material';
+import  {MatCardModule,MatGridListModule,MatTreeModule, MatIconModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TestcaseService} from  './testcase.service';
-import { ApplicationName } from './home/applicationName';
 import { DisplayTestcasesComponent } from './display-testcases/display-testcases.component';
-
+import {NestedTreeControl} from '@angular/cdk/tree';
 
 @NgModule({
   declarations: [
@@ -40,6 +39,7 @@ import { DisplayTestcasesComponent } from './display-testcases/display-testcases
     BrowserAnimationsModule,
     MatGridListModule,
     MatTreeModule,
+    MatIconModule,
   ],
   providers: [MappingTCService, XmlCreationService,TestcaseService],
   bootstrap: [AppComponent]
