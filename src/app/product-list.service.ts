@@ -10,6 +10,8 @@ export class ProductListService {
 
   constructor(private http: HttpClient) { }
   categoryList : any;
+
+  TestCaseTreeList : any;
   returnURL ="http://localhost:3000/api/";
 
   getApplicationList(): Observable<ApplicationName[]>{
@@ -27,4 +29,13 @@ export class ProductListService {
    return this.categoryList;
  }
 
+ exportList(treeData){  
+   console.log(treeData)
+  this.TestCaseTreeList = treeData;
+ }
+
+ importTreeData(){
+   console.log(this.TestCaseTreeList)
+   return this.TestCaseTreeList;
+ }
 }

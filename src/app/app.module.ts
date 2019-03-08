@@ -13,7 +13,7 @@ import { XmlCreationService } from './xml-creation.service';
 import { } from '../../node_modules/xmlbuilder'
 import { HttpClientModule } from '@angular/common/http';
 import { AddTestCaseComponent } from './add-test-case/add-test-case.component';
-import  {MatCardModule,MatGridListModule,MatTreeModule, MatIconModule} from '@angular/material';
+import  {MatCardModule,MatGridListModule,MatTreeModule, MatIconModule,MatCheckboxModule,MatFormFieldModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TestcaseService} from  './testcase.service';
 import { DisplayTestcasesComponent } from './display-testcases/display-testcases.component';
@@ -40,6 +40,9 @@ import {NestedTreeControl} from '@angular/cdk/tree';
     MatGridListModule,
     MatTreeModule,
     MatIconModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    
   ],
   providers: [MappingTCService, XmlCreationService,TestcaseService],
   bootstrap: [AppComponent]
