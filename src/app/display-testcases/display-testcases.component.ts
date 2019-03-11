@@ -104,22 +104,16 @@ export class DisplayTestcasesComponent implements OnInit {
   checklistSelection = new SelectionModel<TodoItemFlatNode>(true /* multiple */);
 
 
-
+checkLoading :any;
   dataList: Testcases[];
   categoryArray = [];
   modArray = [];
   constructor(private productListService: ProductListService,private database: ChecklistDatabase) {
-    this.treeFlattener = new MatTreeFlattener(this.transformer, this.getLevel,
-      this.isExpandable, this.getChildren);
-    this.treeControl = new FlatTreeControl<TodoItemFlatNode>(this.getLevel, this.isExpandable);
-    this.dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
-
-    database.dataChange.subscribe(data => {
-      this.dataSource.data = data;
-    });
+    this.checkLoading = false;
    }
 
    
+ 
   getLevel = (node: TodoItemFlatNode) => node.level;
 
   isExpandable = (node: TodoItemFlatNode) => node.expandable;
@@ -170,10 +164,22 @@ export class DisplayTestcasesComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     this.productListService.importList().subscribe(data => {
       this.dataList = data,
         this.findUniqueCategory()
     })
+
+    this.treeFlattener = new MatTreeFlattener(this.transformer, this.getLevel,
+      this.isExpandable, this.getChildren);
+    this.treeControl = new FlatTreeControl<TodoItemFlatNode>(this.getLevel, this.isExpandable);
+    this.dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+
+    this.database.dataChange.subscribe(data => {
+      this.dataSource.data = data;
+     
+    });
+
   }
 
   findUniqueCategory = function () {

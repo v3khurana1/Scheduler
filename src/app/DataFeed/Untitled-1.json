@@ -1,0 +1,63 @@
+[
+    {
+        "testCaseName" : "To verify if user is able to login and navigate to iSource by selecting iSource Product from Product Selection Page. ",
+        "testScriptName" : "test",
+        "categoryName" : "Login & Other",
+        "moduleName"  : "Login",
+        "applicationName" : "iSource",
+        "automationStatus" : false,
+        "lastExecutionStatus" : "",
+        "lastExecutionDate" : ""
+    },
+    {
+        "testCaseName" : "To verify if updated Release Notes are available",
+        "testScriptName" : "test",
+        "categoryName" : "Login & Other",
+        "moduleName"  : "Release Notes",
+        "applicationName" : "iSource",
+        "automationStatus" : false,
+        "lastExecutionStatus" : "",
+        "lastExecutionDate" : ""
+    },
+    {
+        "testCaseName" : "To verify if updated Release Videos videos are available",
+        "testScriptName" : "test",
+        "categoryName" : "Login & Other",
+        "moduleName"  : "Release Videos",
+        "applicationName" : "iSource",
+        "automationStatus" : false,
+        "lastExecutionStatus" : "",
+        "lastExecutionDate" : ""
+    },
+    {
+        "testCaseName" : "To verify if the user is able to access the Dashboard and view the following 4 dashlets",
+        "testScriptName" : "test",
+        "categoryName" : "Dashboard",
+        "moduleName"  : "Dashboard",
+        "applicationName" : "",
+        "automationStatus" : false,
+        "lastExecutionStatus" : "",
+        "lastExecutionDate" : ""
+    },
+    {
+        "testCaseName" : "To verify if the user is able to create Supplier Side Eforum Custom Fields",
+        "testScriptName" : "test",
+        "categoryName" : "Dashboard",
+        "moduleName"  : "Admin",
+        "applicationName" : "iSource",
+        "automationStatus" : false,
+        "lastExecutionStatus" : "",
+        "lastExecutionDate" : ""
+    },
+    {
+        "testCaseName" : "To verify if Flexiform Data to flow between Draft to Award",
+        "testScriptName" : "test",
+        "categoryName" : "Dashboard",
+        "moduleName"  : "Admin",
+        "applicationName" : "iSource",
+        "automationStatus" : false,
+        "lastExecutionStatus" : "",
+        "lastExecutionDate" : ""
+    }
+]
+

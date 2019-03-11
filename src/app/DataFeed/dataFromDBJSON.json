@@ -1,0 +1,673 @@
+{
+    "Logins & Other":
+    [{
+        "moduleName": "Module Name",
+        "testCaseName": "Test Step Description / Business Process Step"
+    },
+    {
+        "moduleName": "Login",
+        "testCaseName":
+            "To verify if user is able to login and navigate to iSource by selecting iSource Product from Product Selection Page."
+    },
+    {
+        "moduleName": "Release Notes",
+        "testCaseName": "To verify if updated 'Release Notes' are available"
+    },
+    {
+        "moduleName": "Release Videos",
+        "testCaseName": "To verify if updated 'Release Videos' videos are available"
+    },
+    {
+        "moduleName": "Buyer Help",
+        "testCaseName": "To verify if updated 'Buyer help' is available"
+    },
+    {
+        "moduleName": "Supplier Help",
+        "testCaseName": "To verify if updated 'Supplier help'  is available"
+    },
+    {
+        "moduleName": "Buyer Manual",
+        "testCaseName": "To verify if updated 'Buyer Manual' is available"
+    },
+    {
+        "moduleName": "Company Admin Manual",
+        "testCaseName": "To verify if updated 'Company Admin' Manual is available"
+    },
+    {
+        "moduleName": "Supplier Manual",
+        "testCaseName": "To verify if updated 'Supplier Manual' is available"
+    },
+    {
+        "moduleName": "Browser Configuration Checklist",
+        "testCaseName":
+            "To verify if 'Browser Configuration Checklist' is available"
+    },
+    {
+        "moduleName": "FAQ",
+        "testCaseName": "To verify if  'FAQ' manual is available"
+    },
+    {
+        "moduleName": "Contact Us",
+        "testCaseName": "To verify if contact details are getting displayed"
+    },
+    {
+        "moduleName": "About iSource",
+        "testCaseName": "To verify the details of 'iSource' application."
+    },
+    {
+        "moduleName": "Live engage",
+        "testCaseName": "To verify if Live Chat is available."
+    },
+    {
+        "moduleName": "Logout",
+        "testCaseName": "To verify if user is able to logout successfully."
+    }],
+        "Dashboard":
+    [{
+        "moduleName": "Module Name",
+        "testCaseName": "Test Step Description / Business Process Step"
+    },
+    {
+        "moduleName": "Dashboard",
+        "testCaseName":
+            "To verify if the user is able to access the Dashboard and view the following 4 dashlets:\r\n1. Calendar\r\n2. Recent Events\r\n3. Favorites\r\n4. Pending Events"
+    },
+    {
+        "moduleName": "Admin",
+        "testCaseName":
+            "To verify if the user is able to create Supplier Side Eforum Custom Fields"
+    },
+    {
+        "moduleName": "Admin",
+        "testCaseName": "To verify if Flexiform Data to flow between Draft to Award"
+    }],
+        "My Events - RFP&RFQ":
+    [{
+        "moduleName": "Module Name",
+        "testCaseName": "verify Step Description / Business Process Step"
+    },
+    {
+        "moduleName": "My Events",
+        "testCaseName":
+            "To verify if the Buyer is able to access My Events page of the  application and view the Events as a buyer"
+    },
+    {
+        "moduleName": "My Events",
+        "testCaseName":
+            "To verify if the Buyer is able to create a sourcing Event on the My Events page"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if Buyer is able to upload event level attachments in the Event created."
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if Buyer is able to attach Terms and Conditions for an Event in the draft stage."
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer can create a draft of an event and add all the types of questions along with item table."
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to add incumbent suppliers to the Line Item details in the Item Table"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to Export Lot in Excel format to manually add the Line Item Details"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to Import Lot from Excel format after manually adding the Line Item Details"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the user is able to add BU from the BU Master List in the Business Unit Column"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to Import a Flexi Item Table into the lot"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the user is able to Create New Mapping  of the flexi item table as follows:\r\n1. Identify Primary Sheet\r\n2. Confirm Header Position\r\n3. Map BOM Structure\r\n4. Map Mandatory Columns\r\n5. Group Other Columns\r\n6. Set Cell level Preference"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to freeze the Draft of the Event"
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to enter the Collect stage of the event"
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if Buyer is able to select the supplier by clicking on the select supplier button."
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if Buyer is able to schedule an Event by clicking on Schedule event Tab."
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if Buyer is able to add multiple currencies to the event while scheduling."
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName": "To verify if the buyer is able to Publish the Event."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify whether  \"Help\" links are functional on the supplier landing page."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify if \"No Bid\" column is reflected properly on the My Events--> View Sourcing Events page if included in the event."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify if hidden custom columns are shown at the supplier side."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify  if Supplier is able to save the responses in the supplier side RFx."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify if supplier can import the responses in the item table when event has flexi item table."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify if Currency is shown in the Baseline costs column of the item table."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify if responses of the supplier are retained if carried forward while creation of multiround."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify the state of \"Submit Response \" tab when Responses are submitted."
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if the Vendor status in the collect stage of an Event changes to \"Responses Received\" as supplier submits his responses."
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if Buyer is able to export the responses of the Suppliers in the Collect stage in different excel formats in Collect stage whose status is responses received - \r\n1) Non-Pricing Excel format \r\n2) Non-Pricing CSV format\r\n3) Pricing Pivot \r\n4) Pricing CSV"
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName": "to verify whether buyer can carry out  Surrogate Bidding ."
+    },
+    {
+        "moduleName": "Collect Stage",
+        "testCaseName":
+            "To verify if the scheduled event closes once the Close time is reached."
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to move the event to negotiate stage after the event is closed"
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify if Buyer can enter into the Negotiate stage of an Event by clicking on the Negotiate stage from the My Events Page."
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify if the user is able to perform Negotiation when the the draft contains Flexi Item Table"
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to add suppliers to the next round of the Event (max 5 rounds)"
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify if Buyer is able to send the Supplier for Round 1 of negotiation, for a corresponding supplier"
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify if the supplier is able to view the negotiated pricing sent for approval by the buyer"
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify if the supplier is able to approve the negotiated price"
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify if the supplier is able to reject the negotiated price"
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName": "To verify if Buyer is able to Compare Bids"
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify f the Buyer is able to close the negotiation of the event"
+    },
+    {
+        "moduleName": "Negotiate Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to Move the Event to Analyze stage once the user closes the Negotiation"
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to enter in to the Analyze stage by clicking on the Analyze button from the My Events page."
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if Buyer is able to Export the responses of suppliers in Analyze stage in different excel formats only of the suppliers whose responses status is \"Response Received\"- \r\n1) Non Pricing Excel format\r\n2) Non- Pricing CSV\r\n3) Pricing Responses - Row wise\r\n4) Pricing Responses - Column wise\r\n5) Pricing Responses for Pivot\r\n6) Pricing Responses in CSV"
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to View the Responses of the suppliers"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to go into Bid Analysis by clicking on the cup icon beside Analyze button on the My Events Page."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to enter into all 4 default scenarios present in Bid Analysis by clicking on the scenarios."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to apply filter on Suppliers and Items included in the Bid Analysis, by clicking on the Item and Supplier Count present at the top left of the screen."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer can Save the Optimized scenario by giving desired Name to the Scenario."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to update the Same optimized scenario by modifying the filters."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to modify the existing scenario and Save it as a new scenario."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer can export the optimized scenario by clicking on the export link present at the top left corner of the screen."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to see all the Processed scenarios in the My Optimized scenario tab."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to View, Edit, Export and Remove the scenario from the my Optimized scenarios list."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to view scenario at different levels such as- \r\n1) Item\r\n2) Lot \r\n3) Across Lot\r\n4) Custom Column\r\n5) Suppliers"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to add new formula to create new optimized scenario based on the added formula."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify supplier cost is calculated correctly based on the quantity split awarded for that supplier"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to send the Awarding Scenario for approval"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the  workflow triggers after the Buyer click on Send for Approval button"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to send Regret E-mail to the Suppliers who were not awarded"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName": "To verify if the Buyer is able to view the Award Summary"
+    },
+    {
+        "moduleName": "My Events",
+        "testCaseName":
+            "To verify whether the iSource will  send Outlook invites to the  suppliers"
+    },
+    {
+        "moduleName": "eForum",
+        "testCaseName": "To verify Custom Types of Supplier eForum"
+    }],
+        "My Events - Auction":
+    [{
+        "moduleName": "Module Name",
+        "testCaseName": "verify Step Description / Business Process Step"
+    },
+    {
+        "moduleName": "My Events",
+        "testCaseName":
+            "To verify if the Buyer is able to create a sourcing Event on the My Events page"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName": "To verify if a user can add section to a draft"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to add a pricing lot to the section"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to add classic item table to the lot and select whether he wants to perform Line Item Level Bidding Auction or Lot Level Bidding Auction"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to Import a Flexi Item Table into the lot"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to select whether he wants to perform Lot Level Bidding Auction or Line Item Level Bidding Auction when he uses Flexi Item Table in the section of the draft"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to freeze the Draft of the Event"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to enter the Conduct stage of the event"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if Buyer is able to select the supplier by clicking on the select supplier button."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if Buyer is able to schedule an Event by clicking on Schedule event Tab and perform some Auction settings as follow:\r\n\r\n(a) General Auction Setting - \r\n(i) Forward Auction or Reverse Auction\r\n(ii) Select the Primary Currency\r\n(iii) Selecting when to Disp[lay the best bid\r\n(iv) Selecting how to Display Rank\r\n\r\n(b) Auction Date & Time Settings\r\n(i) Select when to start the Auction:\r\n         Open When Posted or Manually Set the Open Date/Time\r\n(ii) Select the Auction Close Date / Time\r\n(iii) Select when to block the supplier if bid changes by a certain increase in % value\r\n(iv) Select when to Warn the Buyer if bid changes by a certain increase in % value\r\n(v) Select the duration per lot\r\n\r\n(c) Set Bidding and Tie Prevention Rules"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName": "To verify if the buyer is able to Publish the Event."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "Verify if Currency is shown in the Baseline costs column of the item table."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify if the supplier is able to navigate to the  Bidding page after clicking on the Join Bidding tab"
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName": "To verify if the supplier is able to submit bid value"
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify if the supplier is able to submit the bid value lower or same as the previous value if it is a forward auction"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if user is able to go to Auction Summary in Conduct stage and can monitor the Auction."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if the user is able to move the event to Bid Reconciliation abd perform bid reconciliation."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if the user is able to move the event to Analyze stage"
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to enter in to the Analyze stage by clicking on the Analyze button from the My Events page."
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if Buyer is able to Export the responses of suppliers in Analyze stage in different excel formats only of the suppliers whose responses status is \"Response Received\"- \r\n1) Non Pricing Excel format\r\n2) Non- Pricing CSV\r\n3) Pricing Responses - Row wise\r\n4) Pricing Responses - Column wise\r\n5) Pricing Responses for Pivot\r\n6) Pricing Responses in CSV"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to go into Bid Analysis by clicking on the cup icon beside Analyze button on the My Events Page."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to enter into all 4 default scenarios present in Bid Analysis by clicking on the scenarios."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To Verify if buyer is able to enter into 360 degree Analysis"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the buyer is able to Award the Event using 360 degree analysis and Bid analysis scenario."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName": "The user must be able to create contract after awarding"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to send Regret E-mail to the Suppliers who were not awarded"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName": "To verify if the Buyer is able to view the Award Summary"
+    },
+    {
+        "moduleName": "My Events",
+        "testCaseName":
+            "To verify whether the  ZSN enabled customers are able to create an Public Event"
+    }],
+        "Japanese Auction":
+    [{
+        "moduleName": "My Events",
+        "testCaseName":
+            "To verify if the Buyer is able to create a sourcing Event on the My Events page (Japanese Event - Reverse)"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName": "To verify if a user can add section to a draft"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to add a pricing lot to the section"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to add classic item table to the lot and select whether he wants to perform Line Item Level Bidding Auction or Lot Level Bidding Auction"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to Import a Flexi Item Table into the lot"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to select whether he wants to perform Lot Level Bidding Auction or Line Item Level Bidding Auction when he uses Flexi Item Table in the section of the draft"
+    },
+    {
+        "moduleName": "Draft Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to freeze the Draft of the Event"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to enter the Conduct stage of the event"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if Buyer is able to select the supplier by clicking on the select supplier button."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if Buyer is able to schedule an Event by clicking on Schedule event Tab and perform some Auction settings as follow:\r\n\r\n1. Select the Forward Auction or Reverse Auction.\r\n2. Check for multi-currency.\r\n3. In Event Scheduler - schedule Auction (Note: open date and time and auction date and time should have a time difference of 30 min)\r\n4. In Event Scheduler - Schedule Non-pricing reponse.\r\n5. set the values for Price dynamics."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName": "To verify if the buyer is able to Publish the Event."
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName":
+            "To verify if the supplier is able to navigate to the  Bidding page after clicking on the Join Bidding tab"
+    },
+    {
+        "moduleName": "Supplier Side",
+        "testCaseName": "To verify if the supplier is able to submit bid value"
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if user is able to go to Auction Summary in Conduct stage and can monitor the Auction."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if the user is able to move the event to Bid Reconciliation abd perform bid reconciliation."
+    },
+    {
+        "moduleName": "Conduct Stage",
+        "testCaseName":
+            "To verify if the user is able to move the event to Analyze stage"
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if the Buyer is able to enter in to the Analyze stage by clicking on the Analyze button from the My Events page."
+    },
+    {
+        "moduleName": "Analyze Stage",
+        "testCaseName":
+            "To verify if Buyer is able to Export the responses of suppliers in Analyze stage in different excel formats only of the suppliers whose responses status is \"Response Received\"- \r\n1) Non Pricing Excel format\r\n2) Non- Pricing CSV\r\n3) Pricing Responses - Row wise\r\n4) Pricing Responses - Column wise\r\n5) Pricing Responses for Pivot\r\n6) Pricing Responses in CSV"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to go into Bid Analysis by clicking on the cup icon beside Analyze button on the My Events Page."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if Buyer is able to enter into all 4 default scenarios present in Bid Analysis by clicking on the scenarios."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To Verify if buyer is able to enter into 360 degree Analysis"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the buyer is able to Award the Event using 360 degree analysis and Bid analysis scenario."
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName": "The user must be able to create contract after awarding"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName":
+            "To verify if the Buyer is able to send Regret E-mail to the Suppliers who were not awarded"
+    },
+    {
+        "moduleName": "Bid Optimization",
+        "testCaseName": "To verify if the Buyer is able to view the Award Summary"
+    }],
+        "My Suppliers":
+    [{
+        "moduleName": "Module Name",
+        "testCaseName": "verify Step Description / Business Process Step"
+    },
+    {
+        "moduleName": "Company List",
+        "testCaseName": "To Verify that user is able to create supplier company"
+    },
+    {
+        "moduleName": "Supplier Contact Groups",
+        "testCaseName": "To Verify that user is able to create a supplier Group"
+    },
+    {
+        "moduleName": "Supplier Contact Groups",
+        "testCaseName":
+            "To Verify that user is able to edit a supplier Group and able to add supplier contacts"
+    },
+    {
+        "moduleName": "Supplier Contact Groups",
+        "testCaseName":
+            "To Verify that user is able to edit a supplier Group and able to add internal users"
+    }]
+}
